@@ -1,12 +1,4 @@
-Python Part II
-PayPal -- San Jose
-September 39, 2019
-=================
 
-Taught by:  Raymond Hettinger
-            python@rcn.com                 <-- rarely answered, over-burdened email address
-            rachel.hettinger@outlook.com   <-- write to Rachel for class bookings
-            @raymondh
 
 Suggestions for Machine Learning:
 * http://www.mathwashing.com/
