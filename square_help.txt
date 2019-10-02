@@ -1,0 +1,7 @@
+==============================
+This object is a <class 'function'>
+It came from: __main__
+Its name is: square
+What is does:
+Return a value times itself
+

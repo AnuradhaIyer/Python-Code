@@ -1,0 +1,552 @@
+Python Part II
+PayPal -- San Jose
+September 39, 2019
+=================
+
+Taught by:  Raymond Hettinger
+            python@rcn.com                 <-- rarely answered, over-burdened email address
+            rachel.hettinger@outlook.com   <-- write to Rachel for class bookings
+            @raymondh
+
+Suggestions for Machine Learning:
+* http://www.mathwashing.com/
+* https://www.amazon.com/Hundred-Page-Machine-Learning-Book/dp/199957950X
+* https://scikit-learn.org/stable/tutorial/index.html
+* https://archive.ics.uci.edu/ml/index.php
+* https://www.kaggle.com/
+
+Python Books:
+* Python Essential Reference -- David Beasley
+* Python for Data Analysis -- Wes KcKinney
+
+
+Class Files
+===========
+
+    ~/algebra.py
+    ~/more_algebra.py
+    ~/adjectives.py
+    ~/day1.py
+    ~/getting_setup.py
+    ~/threading_demo.py
+    ~/tour_of_collections.py
+    ~/pubsub.py
+    ~/day2.py
+    ~/walrus_demo.py
+    ~/simpsons.html
+    ~/lannisters.html
+    ~/templating_demo.py
+    ~/show_args.py
+    ~/links.txt
+    ~/day3.py
+    ~/download.py
+    ~/argparse_demo.py
+    ~/frequency.py
+    ~/irises.py
+    ~/k_nearest_neighbors.py
+    ~/decorator_school.py
+    ~/dispatch_school.py
+    ~/server.log
+    ~/demo.log
+    ~/logging_demo.py
+    ~/subprocess_demo.py
+    ~/algebra_patch.py
+    ~/graphviz.py
+    ~/rest_api_server.py
+    ~/review.py
+~/day4.py
+
+
+Resources
+=========
+* http://code.activestate.com/recipes/langs/python/
+* http://pymotw.com/2/xml/etree/ElementTree/index.html#module-xml.etree.ElementTree
+* http://txt2re.com/
+* http://interactive.blockdiag.com/graphviz/
+* http://graphviz.org
+* http://sms411.net/how-to-send-email-to-a-phone/
+* http://www.doughellmann.com/PyMOTW/py-modindex.html
+* http://sphinx.pocoo.org/
+* http://code.activestate.com/recipes/577737-public-key-encryption-rsa/
+* http://www.edwardtufte.com/tufte/courses
+* http://www.pythontutor.com/
+* http://www.noah.org/wiki/pexpect
+* https://addons.mozilla.org/En-us/firefox/addon/live-http-headers/
+
+
+Favorite Third-Party Modules
+============================
+* http://docs.python-requests.org/en/latest/index.html
+* https://github.com/toastdriven/itty
+* http://www.crummy.com/software/BeautifulSoup/
+* http://sphinx.pocoo.org/
+* http://pypi.python.org/pypi/selenium
+* http://docs.fabfile.org/en/1.4.1/index.html
+
+Other popular tools:
+    pip virtualenv http5lib pyflakes pytz nose
+    xlrd xlwt pyserial reverend.thomas requests
+    numpy scipy matplotlib itty bottle ipython
+
+
+Recommended Reading
+===================
+* http://norvig.com/spell-correct.html
+* http://effbot.org/zone/call-by-object.htm
+* http://docs.python.org/library/functions.html
+* http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
+* http://jessenoller.com/blog/2009/02/05/ssh-programming-with-paramiko-completely-different
+
+
+Magic Methods
+=============
+* http://docs.python.org/reference/datamodel.html#special-method-names
+$/magicmethods.pdf
+
+
+Code Reading Examples
+=====================
+ $/picirc.py
+ $/banner.py
+$/norvig_corrector.py
+ $/corpus.dat
+$/highlight.py
+$/publish.py
+ $/fsm.py
+$/mpl_demo.py
+ $/peace.py
+ $/yinyang.py
+$/irises.db
+$/iris.tpl
+$/quadratic.tpl
+$/pubsub.zip
+
+Books on Programming
+====================
+* Programming Pearls and More Programming Pearls -- Aho
+* The Practice of Programming -- Pike
+* The Pragmatic Programmer -- Thomas
+
+
+Slides
+======
+
+ $/PythonAwesome.pdf
+ $/islands.pdf
+
+
+Tools
+=====
+$/__init__.py
+$/BeautifulSoup.py
+$/pexpect.py
+$/bottle.py
+
+PExpect
+=======
+    Advice on learning Pexpect
+    1) import notes.pexpect
+    2) help(notes.pexpect)         <-- The docstrings are great, with good examples!
+    3) go to the webpage and look at the example descriptions:
+         http://www.noah.org/wiki/pexpect                      # Webpage
+    4) look at the source for each example
+         http://10.155.73.8:8080/pexpect/index.html   # Examples
+
+
+Turtle Examples
+===============
+
+    https://dl.dropboxusercontent.com/u/3967849/turtle/pub/index.html
+
+    http://www.amazon.com/Python-Kids-Playful-Introduction-Programming/dp/1593274076
+
+    Great book on teaching with turtles:  Mindstorms by Papert
+    http://www.amazon.com/Mindstorms-Children-Computers-Powerful-Ideas/dp/0465046746
+
+
+Editors
+=======
+vi users          -- use vi plus ipython  or python-mode
+emacs users       -- use python-mode
+eclipse           -- use pydev plug-in
+python specific   -- pycharm or wing-ide (has a nice debugger) or komodo
+curses tool       -- bpython (curses interface)
+visual studio     -- iron python plug-in
+
+
+Sample Data
+===========
+
+$/oop_story.txt
+$/kap.svg
+$/kap.dot
+$/english_composition.txt
+$/Raymond_Hettinger.png
+$/Raymond_Hettinger.vcf
+$/member_template.txt
+$/family_template.txt
+$/nasa_19950801.log
+$/queue_stats.txt
+$/crossword_challenge.py
+$/ipv4_int_bri.txt
+$/show_controllers.txt
+$/raisin_team.csv
+$/raisin_team_update.csv
+$/books.json
+$/books.xml
+$/rss.xml
+$/fruit.xml
+$/stocks.txt
+$/email.txt
+$/dns_servers.json
+$/team_history.json
+$/team_history.txt
+$/re.txt
+$/hamlet.txt
+$/parse_demo1.txt
+$/parse_demo2.txt
+$/ping_output.txt
+ $/words.txt
+ $/congress_data.zip
+$/vcard.css
+$/happy.csv
+$/IRIS_SETOSA.jpeg
+$/IRIS_VERSICOLOR.jpeg
+$/IRIS_VIRGINICA.jpeg
+$/iris_data.csv
+$/proverbs_de.txt
+$/proverbs_en.txt
+$/proverbs_es.txt
+$/proverbs_fr.txt
+$/proverbs_it.txt
+$/Probability.ipynb
+$/gutenberg_books.zip
+$/graphviz.tpl
+$/iris.tpl
+$/language.tpl
+$/quadratic.tpl
+$/cisco_training.db
+$/mytwitter.zip
+
+General Notes
+=============
+
+How to make tuples and lists and dicts and sets:
+
+        Length 0:
+            []
+            ()
+            {}
+            set()
+
+        Length 1:
+            [10]  [10,]
+            10,   (10,)
+            {'raymond': 'red'}
+            {10}
+
+How to generate documentation automatically:
+
+    * python -m pydoc -w kap portfolio
+
+          ~/kap.html
+          ~/portfolio.html
+
+
+LIST COMP:
+    [i**2 for i in range(10)]
+
+SET COMP:
+    {i**2 for i in range(-5, 10)}
+
+DICT COMP:
+    {i**2 : i for i in range(10)}
+
+GEN EXP:
+    sum(i**2 for i in range(10))
+
+
+Regex notation
+===============
+
+    raymond             Does an exact match
+    profit|loss         Match either profit or loss
+    photo_...jpg        Dots match any character     photo_32.jpg
+    photo[a-g].jpg      Brackets match a character group    photoa.jpg photob.jpg
+    [aeiou]             Matches any single vowel
+    [^aeiou]            Matches any single non-vowel
+
+    \d                  [0-9] any digit
+    \D                  [^0-9] any non-digit
+    \w                  [A-Za-z0-9_] alphanumeric text with an underscore
+    \W                  non-alphanumeric without an underscore
+    \s                  space characters
+    \S                  non-space characters
+    \b                  word boundaries
+
+    a?                  Match zero or one       a{0,1}
+    a+                  Match one or more       a{1,}
+    a*                  Match zero or more      a{0,}
+    a{m,n}              Match m to n
+
+    match               Must match right at the beginning   --> match object
+    search              May match anywhere                  --> match object
+    findall             Finds them all                      --> list of matches
+
+    Recommendations:
+    1. Always start with findall()
+    2. Start with a small regex that matches, then grow it.
+    3. Always use raws strings for regexes
+
+    Regular expression groups:
+
+    mo = re.search(r'(\d+)/(\d+)/(\d+)', data)
+    mo.group()    entire match
+    mo.group(0)   entire match
+    mo.group(1)   month
+    mo.group(2)   day
+    mo.group(3)   year
+
+    month, day, year = re.search(r'(\d+)/(\d+)/(\d+)', s).groups()
+
+
+Logging
+=======
+
+To setup a logger:
+
+    import logging
+    logging.basicConfig(filename='example.log',level=logging.DEBUG)
+
+To make log entries:
+
+    logging.debug(msg)
+    logging.info(msg)
+    logging.error(msg)
+    logging.critical(msg)
+    logging.warn(msg)
+
+
+Debugger
+========
+
+To run the debugger from the command-line (not the interactive prompt):
+
+    $ python -m pdb tweet_bug.py
+
+The most common debugger commands:
+
+    c   - continue until an exception or normal finish
+    n   - next (run to the next line)
+    l   - list the source and show where you are
+    b   - set a breakpoint
+    p   - print a variable
+    pp  - pretty print a variable
+    q   - quit
+
+
+Directories
+===========
+
+Popular commands in the OS module:
+
+    os.getcwd()        # show the current working directory
+    os.listdir('.')    # list the files in a given directory
+    os.chdir(somedir)  # change to another directory
+
+
+An HTTP request
+===============
+GET /index.html HTTP/1.1
+Host: www.python.org
+Connection: close
+
+
+With-Statement
+=============
+
+How to use the with-statement for file closing and lock releasing
+
+    # The old way that STILL works
+    f = open('notes/stocks.txt')
+    try:
+        data = f.read()
+    finally:
+        f.close()
+
+    # The new way
+    with open('notes/stocks.txt') as f:
+        data = f.read()
+
+
+    # The old way that STILL works
+    lock = threading.Lock()
+    lock.acquire()
+    try:
+        crit1()
+        crit2()
+    finally:
+        lock.release()
+
+    # The new way
+    with lock:
+        crit1()
+        crit2()
+
+
+Tools
+=====
+
+Pip:
+    $ curl -O http://python-distribute.org/distribute_setup.py
+    $ python distribute_setup.py
+    $ curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+    $ python get-pip.py
+    $ pip install virtualenv
+
+
+
+VirtualEnv:
+    http://pypi.python.org/pypi/virtualenv
+
+    $ virtualenv myproj
+    $ source myproj/bin/activate
+    $ pip install requests
+    $ pip install flask
+
+
+    (myproj) $ pip install django
+    (myproj) $ python
+    >>> import django
+    >>> ^D
+    (myproj) $ deactivate
+    $ # back to normal
+
+PyFlakes -- Avoid embarrassment using a Python lint
+
+    $ pip install pyflakes
+    $ pyflakes getflow.py
+
+
+REST APIs:
+==========
+QR codes:
+    https://developers.google.com/chart/infographics/docs/qr_codes
+    http://chart.apis.google.com/chart?cht=qr&chs=300x300&chl=Hello%20World --> hello.png
+Twitter:
+    https://dev.twitter.com/docs/api/1/get/search
+    http://search.twitter.com/search.json?q=@raymondh&rpp=10
+
+
+Suggestions for Little Python Projects
+======================================
+1) Use MS Excel to create a list of your teammate's names, titles, phone numbers, and email addresses.
+   Save the file as CSV.  Use Python's CSV reader to loop over the data.  Use a print template to
+   create VCard files (see wikipedia for the VCard format).  Use the code from tweet.py as a model
+   for creating QR codes from the Vcards (see the REST API links above).
+
+2) Read the wikipedia article on Benford's law.  Write a screen scraper that retrieves arbitrary urls
+   and uses regular expressions to extract the numbers.  Display a histogram of the leading digits.
+   Compute a chi-square statistic on the expected versus actual distribution.  Conclude whether the
+   distribution is "natural".
+
+3) Make a list of servers you have access to.  Use Python to generated ping's between them.
+   Summarize the ping times in a graph structure (use a dict  d[fromserver, toserver]=pingtime).
+   Generate graphviz output, possibly showing each node in a position corresponding to its
+   physical location).
+
+4) Project Euclid or Euler
+
+
+Notes
+=====
+
+    def myreplace(s, t, r):
+        'Create a new string from s with t replaced by r'
+        n = len(t)
+        i = s.find(t)
+        if i == -1:
+            return s
+        return s[:i] + r + s[i+n:]
+
+    def myhelp(func):
+        'Replacement for the built-in help'
+        print 'My custom help'
+        print 'Function name:', func.__name__
+        print 'Docstring:'
+        print func.__doc__
+
+    def mysorted(iterable, reverse=False):
+        t = list(iterable)
+        t.sort(reverse=reverse)
+        return t
+
+    Division:
+        >>> 3 / 8
+        0
+        >>> from __future__ import division
+        0.375
+
+
+    # LBYL -- look before you leap
+    def average(seq):
+        n = len(seq)
+        if n == 0:
+            return 1.0
+        else:
+            return sum(seq) / n
+
+    # EAFP -- easier to ask forgiveness than permission
+    def average(seq):
+        n = len(seq)
+        try:
+            return sum(seq) / n
+        except ZeroDivisionError:
+            return 1.0
+
+    def mysorted(iterable):
+        s = list(iterable)
+        s.sort()
+        return s
+
+
+Lists versus iterators
+=======================
+
+    inventory        jit manufacturing
+    uses much mem    memory friendly -> fast
+    ----
+    list             iterator
+    ----             --------
+    range()          xrange()
+    zip()            izip()
+     --              enumerate()
+     --              reversed()
+    sorted()
+    d.items()        d.iteritems()
+
+
+    other types
+    ===========
+    tuple(s)
+    set(s)
+    dict.fromkeys(s)
+
+
+How to use subprocess:
+======================
+
+    >>> import subprocess
+    >>> s = subprocess.check_output('netstat -a', shell=True)
+    >>> [line.split()[4] for line in s.splitlines() if 'tcp4' in line]
+
+
+Example of state update using tuple packing and unpacking
+=========================================================
+
+    x, y, z, dx, dy, dz = (x+dx*t,
+                           y+dy*t,
+                           z+dz*t,
+                           f(planets, x, y, z, 'x'),
+                           f(planets, x, y, z, 'y'),
+                           f(planets, x, y, z, 'z'))

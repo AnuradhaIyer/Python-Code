@@ -1,0 +1,9 @@
+CRITICAL | root | 2019-10-01 11:14:16,528 |  logging_demo:  11 The CPU is fire!
+ERROR    | root | 2019-10-01 11:14:16,528 |  logging_demo:  12 238 requests accepted and approved but only 231 were fulfilled
+WARNING  | mgmt | 2019-10-01 11:14:16,528 |  logging_demo:  13 User 'superman123' attempted 1500 log ins.  Suspected intrusion
+INFO     | mgmt | 2019-10-01 11:14:16,528 |  logging_demo:  14 There were 15675 transactions completed in 18.3 seconds
+ERROR    | root | 2019-10-01 11:14:16,528 |  logging_demo:  21 Missing key!
+Traceback (most recent call last):
+  File "/Users/arajashekar/Downloads/pp9 (1)/logging_demo.py", line 19, in <module>
+    print(d['tom'])
+KeyError: 'tom'
